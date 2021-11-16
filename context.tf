@@ -20,6 +20,10 @@
 # will be null, and `module.this.delimiter` will be `-` (hyphen).
 #
 
+terraform {
+  experiments = [variable_validation]
+}
+
 module "this" {
   source     = "git@github.com:Benoit-LAGUET/terraform-null-label.git"
 
