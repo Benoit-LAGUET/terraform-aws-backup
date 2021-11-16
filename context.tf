@@ -21,7 +21,7 @@
 #
 
 module "this" {
-  source     = "git@github.com:Benoit-LAGUET/terraform-null-label.git?ref=0.25.0"
+  source     = "git@github.com:Benoit-LAGUET/terraform-null-label.git"
 
   enabled             = var.enabled
   namespace           = var.namespace
