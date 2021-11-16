@@ -12,7 +12,7 @@ locals {
 data "aws_partition" "current" {}
 
 module "label_backup_role" {
-  source     = "git@github.com:Benoit-LAGUET/terraform-null-label.git?ref=0.25.0"
+  source     = "git@github.com:Benoit-LAGUET/terraform-null-label.git"
   enabled    = local.enabled
   attributes = ["backup"]
 
